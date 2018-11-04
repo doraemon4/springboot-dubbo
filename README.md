@@ -1,6 +1,6 @@
 以前在2016年的时候自己写了一个基于springmvc，xml配置的一个demo
-[dubbo+zookeeper+spring mvc+mybatis+mysql实现rpc面向服务编程搭建教程](http://www.zuidaima.com/share/2841778527063040.htm)。
-在周末的时候自己做了下基于springboot的实现.
+[dubbo+zookeeper+spring mvc+mybatis+mysql实现rpc面向服务编程搭建教程](http://www.zuidaima.com/share/2841778527063040.htm),
+在周末的时候自己做了下基于springboot的实现。使用注解的时候遇到了一个问题，在provider的启动类必须加*@EnableDubbo*注解才能生效，但是我的消费者没加注解为什么可以生效呢？
 # springboot-dubbo
 使用springboot搭建dubbo分布式
 * 基于xml配置实现生产者和消费者
