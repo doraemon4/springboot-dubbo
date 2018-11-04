@@ -1,8 +1,8 @@
 package com.stephen.learning.controller;
 
+import com.alibaba.dubbo.config.annotation.Reference;
 import com.stephen.learning.api.UserService;
 import com.stephen.learning.model.User;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,7 +17,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/user")
 public class Usercontroller {
-    @Autowired
+    @Reference(version="1.0.0")
     private UserService userService;
 
     @RequestMapping(value = "/queryAll",method = RequestMethod.GET)

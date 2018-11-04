@@ -11,7 +11,6 @@ import org.springframework.context.annotation.ImportResource;
  * @Description:
  */
 @SpringBootApplication
-@ImportResource({"classpath:dubbo-consumer.xml"})
 public class ConsumerApplication {
 
     public static void main(String[] args) {

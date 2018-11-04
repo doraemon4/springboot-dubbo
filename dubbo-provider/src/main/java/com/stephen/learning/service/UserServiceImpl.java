@@ -1,5 +1,6 @@
 package com.stephen.learning.service;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.stephen.learning.api.UserService;
 import com.stephen.learning.model.User;
 
@@ -11,6 +12,7 @@ import java.util.List;
  * @Date: 2018/11/3 11:29
  * @Description:
  */
+@Service(version = "1.0.0")
 public class UserServiceImpl implements UserService {
     @Override
     public List<User> selectAllUsers() {
